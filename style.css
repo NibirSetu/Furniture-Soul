@@ -50,9 +50,31 @@ body {
 .footer {
   text-align: center;
   justify-content: center;
-  background-color: cadetblue;
+  background-color: rgba(139, 158, 110, 255);
   color: aliceblue;
-  padding: 5px;
+  padding: 20px;
+}
+
+/* photo college  */
+#row-college {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#col-college {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 @media only screen and (max-width: 688px) {
   #h1-text {
@@ -71,6 +93,12 @@ body {
     width: auto;
     padding-left: 5px;
   }
+
+  #col-college {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
@@ -84,5 +112,11 @@ body {
   #banner-img {
     margin-bottom: 5px;
     width: 1000px;
+  }
+
+  #col-college {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
 }
